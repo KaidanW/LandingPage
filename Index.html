@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contractors: ExfilZone A next-generation tactical extraction shooter where every bullet and decision matters.">
+  <title>Contractors: ExfilZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+
+    <div class="logo">Contractors:<span> ExfilZone</span></div>
+
+    <nav>
+
+      <ul class="nav-links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#features">Gameplay</a></li>
+        <li><a href="#playnow">Play Now</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+
+    <h1>Enter the <span>Battlefield</span></h1>
+
+    <p>Gear up. Fight. Extract, — survive the chaos of the war-torn Battlefield.</p>
+
+    <a href="#playnow" class="cta">Play Now</a>
+
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="story-section">
+    <div class="content">
+      <h2>Your Mission</h2>
+      <p>
+        In the ruins of fractured nations, private military contractors battle for control of high value gear and resources. 
+        Every operation is a risk, only those who fight to the extraction point leave with their lives and loot.
+      </p>
+      <p>
+        <strong>Contractors: ExfilZone</strong> combines realistic combat mechanics, tense decision making, and immersive environments to deliver a high stakes tactical experience like no other.
+      </p>
+    </div>
+  </section>
+
+
+<br></br>
+
+<!-- Carousel -->
+<section id="gallery">
+  <div class="carousel" class="gallery-section">
+  
+
+  <input type="radio" name="carousel" id="slide1" checked>
+  <input type="radio" name="carousel" id="slide2">
+  <input type="radio" name="carousel" id="slide3">
+  <input type="radio" name="carousel" id="slide4">
+
+    <div class="slides">
+    <div class="slide s1"><img src="EXfilzone.png" alt="EXfilzone"></div>
+    <div class="slide s2"><img src="EZLoot.jpg" alt="CEZLoot"></div>
+    <div class="slide s3"><img src="EzGunsmith.jpg" alt="CEZgunsmith"></div>
+    <div class="slide s4"><img src="EzOverview.jpg" alt="CEZoverview"></div>
+    </div>
+
+  <label for="slide4" class="prev slide1">&#10094;</label>
+  <label for="slide2" class="next slide1">&#10095;</label>
+
+  <label for="slide1" class="prev slide2">&#10094;</label>
+  <label for="slide3" class="next slide2">&#10095;</label>
+
+  <label for="slide2" class="prev slide3">&#10094;</label>
+  <label for="slide4" class="next slide3">&#10095;</label>
+
+  <label for="slide3" class="prev slide4">&#10094;</label>
+  <label for="slide1" class="next slide4">&#10095;</label>
+
+
+  
+</div>
+<script>
+let current = 1;
+setInterval(() => {
+  document.getElementById('slide' + current).checked = true;
+  current = current % 4 + 1;
+}, 5000);
+</script>
+
+
+  <!-- Features Section  -->
+  <section id="features" class="features-section">
+    <h2>Gameplay Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+
+        <h3>Dynamic Extraction</h3>
+        <p>Choose your extraction point wisely. Enemy contractors are watching every move.</p>
+      </div>
+
+      <div class="feature">
+        <h3>In-Depth Weapon Customization</h3>
+        <p>Modify every part of your loadout — barrels, optics, magazines, and more.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Realistic Gunplay</h3>
+        <p>Physics driven ballistics and gunfights ensure every shot matters.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Tactical Teamplay</h3>
+        <p>Coordinate with a two or three person team for team tactics, suppression, and flanking opportunities.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Play Now -->
+  <section id="playnow" class="playnow-section">
+    <div class="playnow-container">
+
+      <h2>Join the Fight</h2>
+      <p>Download now to join the fight and become a contractor yourself.</p>
+
+
+      <form class="playnow-form">
+        <button type="submit">Download</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <p>2025 Caveman Studios. All rights reserved.</p>
+
+    <div class="socials">
+
+    <a href="#">Twitter</a> | <a href="#">Discord</a> | <a href="#">YouTube</a>
+    </div>
+  </footer>
+</body>
+</html>
